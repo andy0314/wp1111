@@ -1,35 +1,156 @@
-.monitor {
-    width: 100vw;
-    height: 100vw;
-    background-color: black;
-}
-
 .main {
     width: 68%;
     height: 84%;
-    background-color: gray;
+    background-color: #4A4E51;
 }
 
-.head {
-    width: 200px;
-    height: 200px;
+.main_head {
+    width: min(20vw , 20vh);
+    height: min(20vw , 20vh);
+    min-width: 50px;
+    min-height: 50px;
     position: relative;
-    top: calc( 50% - 100px );
-    left: calc( 50% - 100px );
+    top: calc( 50% - max(25px , min(10vw , 10vh)) );
+    left: calc( 50% - max(25px , min(10vw , 10vh)) );
     border-radius: 50%;
     background-color: azure;
+}
+
+.main_head_func {
+    width: 60%;
+    height: 15%;
+    position: relative;
+    left: 20%;
+    top: 42.5%;
+    border-radius: 12.5% / 50%;
+    background-color: red;
+    opacity: 0.2;
+}
+
+.main:hover
+    .main_head_func {
+        width: 60%;
+        height: 15%;
+        position: relative;
+        left: 20%;
+        top: 42.5%;
+        border-radius: 12.5% / 50%;
+        background-color: blue;
+        opacity: 0.5;
+}
+
+.main:hover
+    .main_head:hover
+        .main_head_func {
+            width: 60%;
+            height: 15%;
+            position: relative;
+            left: 20%;
+            top: 42.5%;
+            border-radius: 12.5% / 50%;
+            background-color: blueviolet;
+            opacity: 1;
+}
+
+.main_volume {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
 }
 
 .collaborator {
     width: 12%;
     height: 20%;
     border-radius: 5%;
-    color: blue;
-    background-color: gray;
+    background-color: #4A4E51;
+}
+
+.collaborator_head {
+    width: min(10vw , 10vh);
+    height: min(10vw , 10vh);
+    min-width: 25px;
+    min-height: 25px;
+    position: relative;
+    top: calc( 50% - max(12.5px , min(5vw , 5vh)) );
+    left: calc( 50% - max(12.5px , min(5vw , 5vh)) );
+    border-radius: 50%;
+    background-color: azure;
+}
+
+.collaborator_volume {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 12px;
 }
 
 .function {
     width: 96%;
     height: 10%;
-    background-color: gray;
+    background-color: #202124;
+}
+
+.function_time {
+    width: 28%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    background-color: aquamarine;
+}
+
+.function_mid {
+    width: 26%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.function_button_1 {
+    height: 3vw;
+    width: 3vw;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: max(1.5vw , 10px);
+    background-color: aqua;
+}
+
+.function_button_2 {
+    height: 3vw;
+    width: 4.8vw;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: max(1.5vw , 10px);
+    background-color: aqua;
+}
+
+.function_status {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    background-color: bisque;
 }
