@@ -18,15 +18,28 @@
     background-color: #0288d1;
 }
 
+.main_head_pic {
+    width: min(20vw , 20vh);
+    height: min(20vw , 20vh);
+    min-width: 50px;
+    min-height: 50px;
+    position: relative;
+    top: calc( 50% - max(25px , min(10vw , 10vh)) );
+    left: calc( 50% - max(25px , min(10vw , 10vh)) );
+    border-radius: 50%;
+    z-index: 2;
+}
+
 .main_head_func {
     width: 80%;
     height: 26.67%;
-    position: absolute;
+    position: relative;
     left: 10%;
     top: 36.66%;
     border-radius: 16.67% / 50%;
     background-color: black;
     opacity: 0;
+    z-index: 3;
 }
 
 .main:hover
