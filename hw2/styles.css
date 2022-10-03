@@ -1,4 +1,344 @@
 #main {
+    height: 85vh;
+    width: calc( 100% - 400px );
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    min-width: 600px;
+    min-height: 400px;
+    background-color: black;
+}
+
+#side {
+    height: 100%;
+    width: 400px;
+    min-height: 400px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #202124;
+}
+
+#function {
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+    min-height: 100px;
+    min-width: 1000px;
+    top: 85vh;
+    left: 0vh;
+    background-color: #202124;
+}
+
+.function_time {
+    width: 28%;
     height: 80%;
-    width: 75%;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    background-color: #202124;
+    color: white;
+}
+
+.function_mid {
+    width: 26%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-color: #202124;
+}
+
+.function_button {
+    height: 3vw;
+    width: 3vw;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    border-radius: max(1.5vw , 20px);
+}
+
+.function_button_2 {
+    height: 3vw;
+    width: 4.8vw;
+    min-height: 40px;
+    min-width: 64px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    border-radius: max(1.5vw , 20px);
+}
+
+.function_status {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+
+}
+
+.status {
+    height: 2.5vw;
+    width: 2.5vw;
+    min-height: 30px;
+    min-width: 30px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    border-radius: max(1.25vw , 15px);
+}
+
+.button_infor {
+    position: absolute;
+    top: -20px;
+    color: white;
+    font-size: 12px;
+    background-color: #4A4E51;
+    opacity: 0;
+}
+
+.function_button:hover
+    .button_infor {
+        position: absolute;
+        color: white;
+        background-color: #4A4E51;
+        opacity: 1;
+}
+
+.function_button_2:hover
+    .button_infor {
+    opacity: 1;
+}
+
+.status_infor {
+    position: absolute;
+    top: -20px;
+    color: white;
+    background-color: #4A4E51;
+    opacity: 0;
+}
+
+.head_pic {
+    border-radius: 50%;
+}
+
+#main
+    .person {
+        height: 100%;
+        width: 100%;
+}
+
+#side {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#side 
+    .person {
+        height: 150px;
+        width: 180px;
+        background-color: #4A4E51;
+        border-radius: 10px;
+        position: relative;
+}
+
+#main
+    .head_pic {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: calc( 50% - 100px );
+        left: calc( 50% - 100px );;
+}
+
+#side
+    .head_pic {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: calc( 50% - 40px );
+        left: calc( 50% - 40px );;
+}
+
+.delete {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.volume {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #34373A;
+    color: white;
+    font-size: 12px;
+}
+
+#main
+    .head {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: calc( 50% - 100px );
+        left: calc( 50% - 100px );
+        border-radius: 50%;
+        font-size: 8px;
+}
+
+#side
+    .head {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: calc( 50% - 40px );
+        left: calc( 50% - 40px );
+        border-radius: 50%;
+        font-size: 8px;
+}
+
+.head_func {
+    width: 80%;
+    height: 26.67%;
+    position: absolute;
+    left: 10%;
+    top: 36.66%;
+    border-radius: 16.67% / 50%;
+    background-color: #4A4E51;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    opacity: 0;
+    z-index: 3;
+    color: white;
+}
+
+.head_func_button {
+    width: 33.33%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.person:hover
+    .head_func {
+        opacity: 0.3;
+    }
+
+.head:hover
+    .head_func {
+        opacity: 0.8;
+    }
+
+.name {
+        position: absolute;
+        bottom: 15px;
+        left: 12px;
+        font-size: 12px;
+        color: white;
+}
+
+#screen {
+    height: 100%;
+    width: 100% ;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    min-width: 1000px;
+    min-height: 400px;
+    background-color: #202124;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#screen
+    .person {
+        height: 48%;
+        width: 32%;
+        background-color: #4A4E51;
+        border-radius: 10px;
+        position: relative;
+}
+
+#screen
+    .head {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: calc( 50% - 60px );
+        left: calc( 50% - 60px );
+        border-radius: 50%;
+        font-size: 8px;
+}
+
+#screen
+    .head_pic {
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: calc( 50% - 60px );
+        left: calc( 50% - 60px );;
+}
+
+#bd {
+    height: 85vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 1000px;
+    min-height: 400px;
+}
+
+#add_button {
+    opacity: 0;
+}
+
+#main
+    .head_func{
+        font-size: 20px;
+}
+
+#side
+    .head_func{
+        font-size: 12px;
+}
+
+#screen
+    .head_func{
+        font-size: 16px;
 }

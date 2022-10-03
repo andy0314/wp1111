@@ -17,13 +17,166 @@
                 }
             </style>
         </head>
-        <body style="background-color: #202124;">
+        <body>
             <script src="main.js"></script>
-            <div id="main">
-
+            <div id="bd">
+                <div id="main">
+                    <div class="person" id="1">
+                        <img class="head_pic" src="src/head01.jpg">
+                        <div class="volume"><span class="material-symbols-outlined">mic_off</span></div>
+                        <div class="head">
+                            <div class="head_func">
+                                <div class="head_func_button" onclick="TouchPin(1)">
+                                    <span class="material-symbols-outlined">push_pin</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined"">mic_off</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined">do_not_disturb_on</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name">張佑亘</div>
+                    </div>
+                </div>
+                <div id="side">
+                    <div class="person" id="2">
+                        <div class="delete" onclick="DeleteMember(2)"><span class="material-symbols-outlined" style="font-size: 7px; color: white;">remove</span></div>
+                        <img class="head_pic" src="src/head02.jpg">
+                        <div class="volume"><span class="material-symbols-outlined">mic_off</span></div>
+                        <div class="head">
+                            <div class="head_func">
+                                <div class="head_func_button" onclick="TouchPin(2)">
+                                    <span class="material-symbols-outlined">push_pin</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined"">mic_off</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined">do_not_disturb_on</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name">陳元彬</div>
+                    </div>
+                    <div class="person" id="3">
+                        <div class="delete" onclick="DeleteMember(3)"><span class="material-symbols-outlined" style="font-size: 7px; color: white;">remove</span></div>
+                        <img class="head_pic" src="src/head03.jpg">
+                        <div class="volume"><span class="material-symbols-outlined">mic_off</span></div>
+                        <div class="head">
+                            <div class="head_func">
+                                <div class="head_func_button" onclick="TouchPin(3)">
+                                    <span class="material-symbols-outlined">push_pin</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined"">mic_off</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined">do_not_disturb_on</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name">連奕維</div>
+                    </div>
+                    <div class="person" id="4">
+                        <div class="delete" onclick="DeleteMember(4)"><span class="material-symbols-outlined" style="font-size: 7px; color: white;">remove</span></div>
+                        <img class="head_pic" src="src/head04.jpg">
+                        <div class="volume"><span class="material-symbols-outlined">mic_off</span></div>
+                        <div class="head">
+                            <div class="head_func">
+                                <div class="head_func_button" onclick="TouchPin(4)">
+                                    <span class="material-symbols-outlined">push_pin</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined"">mic_off</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined">do_not_disturb_on</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name">陳若瑜</div>
+                    </div>
+                    <div class="person" id="5">
+                        <div class="delete" onclick="DeleteMember(5)"><span class="material-symbols-outlined" style="font-size: 7px; color: white;">remove</span></div>
+                        <img class="head_pic" src="src/head05.jpg">
+                        <div class="volume"><span class="material-symbols-outlined">mic_off</span></div>
+                        <div class="head">
+                            <div class="head_func">
+                                <div class="head_func_button" onclick="TouchPin(5)">
+                                    <span class="material-symbols-outlined">push_pin</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined"">mic_off</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined">do_not_disturb_on</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name">林昀禾</div>
+                    </div>
+                    <div class="person" id="6" style="width: 250px;">
+                        <div class="delete" onclick="DeleteMember(6)"><span class="material-symbols-outlined" style="font-size: 7px; color: white;">remove</span></div>
+                        <img class="head_pic" src="src/head06.jpg">
+                        <div class="volume"><span class="material-symbols-outlined">mic_off</span></div>
+                        <div class="head">
+                            <div class="head_func">
+                                <div class="head_func_button" onclick="TouchPin(6)">
+                                    <span class="material-symbols-outlined">push_pin</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined"">mic_off</span>
+                                </div>
+                                <div class="head_func_button">
+                                    <span class="material-symbols-outlined">do_not_disturb_on</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name">吳秉勳</div>
+                    </div>
+                </div>
             </div>
             <div id="function">
-
+                <div class="function_time" style="font-size: 16px">下午12:43 | Web Programming</div>
+                <div class="function_mid" style="font-size: 8px; color: white">
+                    <div class="function_button" id="microphone" style="background-color: #ea5044" onclick="changecolor1()">
+                        <span class="material-symbols-outlined" onclick="changecolor1()">mic_off</span>
+                    </div>
+                    <div class="function_button" id="camera" style="background-color: #ea5044" onclick="changecolor2()">
+                        <span class="material-symbols-outlined" onclick="changecolor2()">videocam_off</span>
+                    </div>
+                    <div class="function_button" style="background-color: #44474a">
+                        <span class="material-symbols-outlined">present_to_all</span>
+                    </div>
+                    <div class="function_button" style="background-color: #44474a">
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </div>
+                    <div class="function_button_2" style="background-color: #ea5044">
+                        <span class="material-symbols-outlined">call_end</span>
+                    </div>
+                    <div class="function_button" id="add_button" style="background-color: blue" onclick="AddPerson()">
+                        <span class="material-symbols-outlined">add</span>
+                    </div>
+                </div>
+                <div class="function_status" style="font-size: 8px; color: white">
+                    <div class="function_button">
+                        <span class="material-symbols-outlined">info</span>
+                    </div>
+                    <div class="function_button">
+                        <span class="material-symbols-outlined">group</span>
+                    </div>
+                    <div class="function_button">
+                        <span class="material-symbols-outlined">chat</span>
+                    </div>
+                    <div class="function_button">
+                        <span class="material-symbols-outlined">category</span>
+                    </div>
+                    <div class="function_button">
+                        <span class="material-symbols-outlined">lock_person</span>
+                    </div>
+                </div>
             </div>
         </body>
     </html>
