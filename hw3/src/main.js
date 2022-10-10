@@ -14,7 +14,6 @@ var totalTodo = 0;
 var uncompleted = 0;
 
 var AddNewTodo = function(i){
-    console.log(totalTodo);
     let newTodo = document.createElement("li");
     newTodo.className = "todo-app__item";
     let checkBox = document.createElement("div");
@@ -41,21 +40,17 @@ var AddNewTodo = function(i){
         document.getElementById("todo-footer").style = "display: flex;"
     }
     document.getElementsByClassName("todo-app__total")[0].innerText = "" + uncompleted + " left";
-    
+    document.getElementById("todo-footer").style.display = "flex";
 }
 
 var clickButton = function(id){
-    console.log("click");
-    console.log(id);
     let content = document.getElementsByClassName("todo-app__item-detail")[id];
     let box = content.parentElement.getElementsByTagName("input")[0];
     if(box.checked === true){
-        console.log("del");
         uncompleted--;
         content.style = "text-decoration: line-through; opacity: 0.5;";
     }
     else{
-        console.log("add");
         uncompleted++;
         content.style = "";
     }

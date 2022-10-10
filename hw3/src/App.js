@@ -14,7 +14,7 @@ function App() {
         </input>
         <ul className="todo-app__list" id="todo-list"></ul>
       </section>
-      <footer className="todo-app__footer" id="todo-footer">
+      <footer className="todo-app__footer" id="todo-footer" style={{display: 'none'}}>
         <div className="todo-app__total">
           0 left
         </div>
