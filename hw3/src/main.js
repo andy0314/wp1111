@@ -41,6 +41,7 @@ var AddNewTodo = function(i){
         document.getElementById("todo-footer").style = "display: flex;"
     }
     document.getElementsByClassName("todo-app__total")[0].innerText = "" + uncompleted + " left";
+    
 }
 
 var clickButton = function(id){
