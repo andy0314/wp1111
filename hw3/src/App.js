@@ -12,7 +12,7 @@ function App() {
         <input className="todo-app__input">
 
         </input>
-        <ul className="todo-app__list" id="todo-list"></ul>
+        <ul className="todo-app__list" id="todo-list" style={{display: 'none'}}></ul>
       </section>
       <footer className="todo-app__footer" id="todo-footer" style={{display: 'none'}}>
         <div className="todo-app__total">
