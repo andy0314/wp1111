@@ -37,7 +37,7 @@ export default function Dashboard({ remainFlagNum, gameOver }) {
       <div id='dashBoard_col2' >
         <div className='dashBoard_col'>
           <p className='icon'>⏰</p>
-          {gameOver ? sTime : time}
+          {gameOver ? 1 : 0}
         </div>
       </div>
     </div>
