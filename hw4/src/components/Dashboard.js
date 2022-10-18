@@ -13,6 +13,7 @@ let timeIntervalId;
 export default function Dashboard({ remainFlagNum, gameOver }) {
   let [time, setTime] = useState(0);
   let [sTime, setSTime] = useState(0);
+  let 
 
   // Advanced TODO: Implement the timer on the Dashboard
   {/* Useful Hint: Try to understand the difference between time and sTime. */ }

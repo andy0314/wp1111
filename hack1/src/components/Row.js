@@ -10,7 +10,7 @@ import "./css/Row.css";
 import React from 'react';
 
 
-const Row = ({ guess, rowIdx }) => {
+const Row = ({ guess, rowIdx, turn }) => {
     const rowId = ["row_0", "row_1", "row_2", "row_3", "row_4", "row_5"];
     const idAndKey=[["0-0", "0-1","0-2","0-3","0-4"],
     ["1-0", "1-1","1-2","1-3","1-4"],
@@ -24,11 +24,11 @@ const Row = ({ guess, rowIdx }) => {
             
             {/* ↓ Default row, you should modify it. ↓ */}
             <div className='Row-wrapper'>
-                <div id={idAndKey[rowIdx][0]} key={idAndKey[rowIdx][0]} className='Row-wordbox'>{guess[rowIdx][0].}</div>
-                <div id={idAndKey[rowIdx][1]} key={idAndKey[rowIdx][1]} className='Row-wordbox'></div>
-                <div id={idAndKey[rowIdx][2]} key={idAndKey[rowIdx][2]} className='Row-wordbox'></div>
-                <div id={idAndKey[rowIdx][3]} key={idAndKey[rowIdx][3]} className='Row-wordbox'></div>
-                <div id={idAndKey[rowIdx][4]} key={idAndKey[rowIdx][4]} className='Row-wordbox'></div>
+                <div id={idAndKey[rowIdx][0]} key={idAndKey[rowIdx][0]} className='Row-wordbox'>{turn > rowIdx? guess[rowIdx][0]:null}</div>
+                <div id={idAndKey[rowIdx][1]} key={idAndKey[rowIdx][1]} className='Row-wordbox'>{turn > rowIdx? guess[rowIdx][1]:null}</div>
+                <div id={idAndKey[rowIdx][2]} key={idAndKey[rowIdx][2]} className='Row-wordbox'>{turn > rowIdx? guess[rowIdx][2]:null}</div>
+                <div id={idAndKey[rowIdx][3]} key={idAndKey[rowIdx][3]} className='Row-wordbox'>{turn > rowIdx? guess[rowIdx][3]:null}</div>
+                <div id={idAndKey[rowIdx][4]} key={idAndKey[rowIdx][4]} className='Row-wordbox'>{turn > rowIdx? guess[rowIdx][4]:null}</div>
             </div>
             {/* ↑ Default row, you should modify it. ↑ */}
         </div>

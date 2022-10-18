@@ -24,7 +24,7 @@ const CurRow = ({ curGuess, rowIdx }) => {
             {/* TODO 3: Row Implementation -- CurRow */}
             
             {/* ↓ Default row, you should modify it. ↓ */}
-            <div className='Row-wrapper'>
+            <div className='Row-wrapper current'>
                 <div id={idAndKey[rowIdx][0]} key={idAndKey[rowIdx][0]} className='Row-wordbox'>{curGuess[0]}</div>
                 <div id={idAndKey[rowIdx][1]} key={idAndKey[rowIdx][1]} className='Row-wordbox'>{curGuess[1]}</div>
                 <div id={idAndKey[rowIdx][2]} key={idAndKey[rowIdx][2]} className='Row-wordbox'>{curGuess[2]}</div>
