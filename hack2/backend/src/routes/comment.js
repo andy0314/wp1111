@@ -14,6 +14,15 @@ exports.GetCommentsByRestaurantId = async (req, res) => {
     /*******    NOTE: DO NOT MODIFY   *******/
     const id = req.query.restaurantId
     /****************************************/
+    await Comment.find({restaurantId: id}).exec((err, data) => {
+            if(err){
+                res.status(403).send({message: 'error', contents: []})
+            }
+            else{
+                res.status(200).send({message: 'success', contents: data})
+            }
+        })
+    }
     // TODO Part III-3-a: find all comments to a restaurant
 
     // NOTE USE THE FOLLOWING FORMAT. Send type should be 
