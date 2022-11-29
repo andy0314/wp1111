@@ -45,7 +45,7 @@ const SearchPage = () => {
     const navigate = useNavigate();
     const ToRestaurant = (id) => {
         // TODO Part III-1: navigate the user to restaurant page with the corresponding id
-        navigate('/restaurants/'+id)
+        navigate('/restaurant/'+id, { params: { id: id } })
     }
     const getPrice = (price) => {
         let priceText = ""

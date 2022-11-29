@@ -15,7 +15,9 @@ const Information = ({ info, rating }) => {
     const getTag = (tags) => {
         return (
             <>
-                {/* TODO Part III-2-a render tags */}
+                {tags.map((e)=>(
+                    <div className='tag' key={e}>{e}</div>
+                ))}
             </>
         )
     }
@@ -25,16 +27,77 @@ const Information = ({ info, rating }) => {
             priceText += "$"
         return (
             <>
-                {/* TODO Part III-2-a render price tags; hint: convert price number to dollar signs first */}
+                <div className='tag' key={priceText}>{priceText}</div>
             </>
         )
     }
 
     const getBusiness = (time) => {
-        
-        return (
+        const isAll = time.All !== undefined;
+        if(isAll){
+            return(
+                <div className='businessTime'>
+                    <div className='singleDay'>
+                        <div className='day'>Mon</div>
+                        <div className='time'>{time.All}</div>
+                    </div>
+                    <div className='singleDay'>
+                        <div className='day'>Tue</div>
+                        <div className='time'>{time.All}</div>
+                    </div>
+                    <div className='singleDay'>
+                        <div className='day'>Wed</div>
+                        <div className='time'>{time.All}</div>
+                    </div>
+                    <div className='singleDay'>
+                        <div className='day'>Thu</div>
+                        <div className='time'>{time.All}</div>
+                    </div>
+                    <div className='singleDay'>
+                        <div className='day'>Fri</div>
+                        <div className='time'>{time.All}</div>
+                    </div>
+                    <div className='singleDay'>
+                        <div className='day'>Sat</div>
+                        <div className='time'>{time.All}</div>
+                    </div>
+                    <div className='singleDay'>
+                        <div className='day'>Sun</div>
+                        <div className='time'>{time.All}</div>
+                    </div>
+                </div>
+            )
+        }
+        else return (
             <div className='businessTime'>
-                {/* TODO Part III-2-c: render business time for each day*/}
+                <div className='singleDay'>
+                    <div className='day'>Mon</div>
+                    <div className='time'>{time.Mon === undefined ? "Closed" : time.Mon}</div>
+                </div>
+                <div className='singleDay'>
+                    <div className='day'>Tue</div>
+                    <div className='time'>{time.Tue === undefined ? "Closed" : time.Tue}</div>
+                </div>
+                <div className='singleDay'>
+                    <div className='day'>Wed</div>
+                    <div className='time'>{time.Wed === undefined ? "Closed" : time.Wed}</div>
+                </div>
+                <div className='singleDay'>
+                    <div className='day'>Thr</div>
+                    <div className='time'>{time.Thr === undefined ? "Closed" : time.Thr}</div>
+                </div>
+                <div className='singleDay'>
+                    <div className='day'>Fri</div>
+                    <div className='time'>{time.Fri === undefined ? "Closed" : time.Fri}</div>
+                </div>
+                <div className='singleDay'>
+                    <div className='day'>Sat</div>
+                    <div className='time'>{time.Sat === undefined ? "Closed" : time.Sat}</div>
+                </div>
+                <div className='singleDay'>
+                    <div className='day'>Sun</div>
+                    <div className='time'>{time.Sun === undefined ? "Closed" : time.Sun}</div>
+                </div>
             </div>
         )
     }
