@@ -122,6 +122,7 @@ exports.GetInfo = async (req, res) => {
     /*******    NOTE: DO NOT MODIFY   *******/
     const id = req.query.id
     /****************************************/
+    
     // NOTE USE THE FOLLOWING FORMAT. Send type should be 
     // if success:
     // {

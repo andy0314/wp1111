@@ -25,11 +25,11 @@ const Filter = ({ priceFilter, setPriceFilter, mealFilter, setMealFilter, typeFi
         }
         let result = ""
 
-        result = getSingleCategoryTag(PriceTag, priceFilter, result)
-        result = getSingleCategoryTag(MealTag, mealFilter, result)
-        result = getSingleCategoryTag(TypeTag, typeFilter, result)
+        result = getSingleCategoryTag(PriceTag, priceFilter, result);
+        result = getSingleCategoryTag(MealTag, mealFilter, result);
+        result = getSingleCategoryTag(TypeTag, typeFilter, result);
         
-        return result
+        return result;
     }
 
     const modifyFilter = (key, filter) => {

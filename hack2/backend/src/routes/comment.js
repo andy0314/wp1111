@@ -36,7 +36,6 @@ exports.GetCommentsByRestaurantId = async (req, res) => {
     //    message: 'error'
     //    contents: []
     // }
-}
 
 exports.CreateComment = async (req, res) => {
     /*******    NOTE: DO NOT MODIFY   *******/
