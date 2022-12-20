@@ -42,7 +42,7 @@ const Mutation = {
         console.log(err);
       }
     });
-    return item.id
+    return item
   }
   // TODO 5.2 End
   // TODO 6.3 End
