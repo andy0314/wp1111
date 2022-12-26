@@ -1,6 +1,8 @@
 # Web Programming HW#9
 
-網址：https://wp1111-andy-frontend.onrender.com/
+網址1：https://wp1111-andy-frontend.onrender.com/
+
+網址2：https://wp1111-andy-frontend2.onrender.com/
 
 內容為hw6，使用的平台為render.com
 
@@ -24,6 +26,8 @@
 
 6. 再使用同個專案deploy前端，僅有root directory改為frontend，即完成
 
+註：網址1為使用web service和yarn start，2為使用static site和yarn build
+
 優點：超方便
 
-缺點：免錢方案非常慢，可能會需要等待一秒左右才會有資料
+缺點：免錢方案非常慢，，可能會需要等待一秒左右才會有資料
