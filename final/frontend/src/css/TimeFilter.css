@@ -1,0 +1,23 @@
+.table-drag-select td {
+    height: 25px;
+    width: 25px;
+    border: 1px solid;
+    border-color: black;
+    text-align: center;
+}
+
+.table-drag-select td.cell-enabled {
+    background-color: aliceblue;
+}
+
+.table-drag-select td.cell-disabled {
+    background-color: azure;
+}
+
+.table-drag-select td.cell-selected {
+    background-color: aqua;
+}
+
+.table-drag-select td.cell-being-selected {
+    background-color: blue;
+}

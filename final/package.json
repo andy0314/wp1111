@@ -1,0 +1,19 @@
+{
+  "name": "wp1111_final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/andy0314/wp1111_final",
+  "author": "張佑亘 <b10902021@ntu.edu.tw>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd frontend && yarn start",
+    "server": "cd backend && yarn server",
+    "install:prod": "cd frontend && yarn install --freeze-lockfile && cd ../backend && yarn install --freeze-lockfile",
+    "build": "cd frontend && yarn build",
+    "deploy": "cd backend && yarn deploy"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "puppeteer-core": "^19.4.1"
+  }
+}
