@@ -13,6 +13,22 @@ yarn server
 (wait until server log shows "insert (a number)")
 yarn start
 
+##本地執行
+
+cd frontend
+yarn init -y
+yarn install
+yarn start
+
+cd backend
+yarn init -y
+yarn install
+放入自己的.env
+將MONGO_URL= 設成自己的
+yarn server
+開啟網頁
+有帳號直接login，沒帳號要Sign Up 註冊
+
 ## 每位組員之負責項目
 ### 張佑亘
 後端課程資料抓取、後端課程篩選、前端架構和搜尋篩選。
